@@ -4,5 +4,7 @@ This template has Tab Navigation, React-Redux, Redux-Thunk and React-Native debu
 For Redux, the storeConfiguration, action creator, and reducer files and example created
 The setup for react-native debugger is in App.js, please edit them to your own needs
 
-Installation 
-1) 
+Installation steps
+
+....still in development
+
