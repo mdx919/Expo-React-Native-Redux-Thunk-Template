@@ -1,4 +1,3 @@
-still in development........
 <h2>Expo+React-Native+Redux+Thunk+TabNavigation Template</h2>
     This is a React-Native starter template created with Expo.
 This template has Tab Navigation, Redux, React-Redux, Redux-Thunk, eslint-rallycoding and React-Native debugger setup.
