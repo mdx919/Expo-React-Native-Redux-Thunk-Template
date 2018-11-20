@@ -3,11 +3,12 @@
 This template has Tab Navigation, Redux, React-Redux, Redux-Thunk, eslint-rallycoding and React-Native debugger setup.
 For Redux, the storeConfiguration, action creator, and reducer files created with counter example.
 The setup for react-native debugger is in App.js, please edit them to your own needs
-
+<br/>
+<br/>
 <p>Whats included?</p>
 <ul>
   <li>Tab Navigation</li>
-  <li>>Redux</li>
+  <li>Redux</li>
   <li>React-Redux</li>
   <li>Redux-Thunk</li>
   <li>eslint-rallycoding</li>
