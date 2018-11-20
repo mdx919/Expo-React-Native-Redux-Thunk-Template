@@ -10,6 +10,7 @@ The setup for react-native debugger is in App.js, please edit them to your own n
     </br>
 <ol>
   <li><h4>git clone https://github.com/mdx919/Expo-React-Native-Redux-Thunk-TabNav.git</h4></li>
+  <li><h4>cd into the project (rename the app to your need)</h4></li>
   <li><h4>npm install</h4></li>
   <li><h4>expo start</h4></li>
 </ol>
