@@ -1,19 +1,19 @@
 import React from 'react';
 import {
-  Image,
-  Platform,
-  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
-import { WebBrowser } from 'expo';
+import { connect } from 'react-redux';
 
-import { MonoText } from '../components/StyledText';
 import screenSize from '../constants/Layout';
+import {
+  addCount,
+  subtractCount,
+  resetCount } from '../actions/counterActions';
 
-export default class HomeScreen extends React.Component {
+ class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
@@ -22,21 +22,27 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.counterTextTitle}>Counter Now At</Text>
-        <Text style={styles.counterText}>00</Text>
+        <Text style={styles.counterText}>{this.props.count}</Text>
         <View style={styles.counterButtonView}>
           <TouchableOpacity
-            onPress={() => {}}
+            onPress={() => this.props.subtractCount()}
             style={styles.counterButton}
           >
             <Text style={styles.counterButtonText}>-</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => {}}
+            onPress={() => this.props.addCount()}
             style={styles.counterButton}
           >
             <Text style={styles.counterButtonText}>+</Text>
           </TouchableOpacity>
         </View>
+        <TouchableOpacity
+          onPress={() => this.props.resetCount()}
+          style={styles.counterButton}
+        >
+          <Text style={styles.counterButtonText}>RESET</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -57,6 +63,7 @@ const styles = StyleSheet.create({
   },
   counterButtonView: {
     marginTop: 10,
+    marginBottom: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: screenSize.window.width / 2,
@@ -71,3 +78,14 @@ const styles = StyleSheet.create({
     fontSize: 60
   }
 });
+
+const mapStateToProps = (state) => {
+  const { count } = state.counterReducer;
+  return { count };
+};
+
+export default connect(mapStateToProps, {
+  addCount,
+  subtractCount,
+  resetCount
+})(HomeScreen);

@@ -58,13 +58,14 @@ class App extends Component {
           onFinish={this.handleFinishLoading}
         />
       );
-    } else {
-      return (
-        <View style={styles.container}>
-          <AppNavigator />
-        </View>
-      );
     }
+      return (
+        <Provider store={store}>
+          <View style={styles.container}>
+            <AppNavigator />
+          </View>
+        </Provider>
+      );
   }
 }
 
