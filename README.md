@@ -31,8 +31,8 @@ and more....
 
 <p>Then test the app on your simulator or in your device using the expo tools. Then edit the code to your specific needs.</p>
 Happy Coding:)
-
-
+<br/>
+<br/>
 work needed for future..
 <ol>
   <li>support for standalone app</li>
