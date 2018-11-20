@@ -5,7 +5,7 @@ For Redux, the storeConfiguration, action creator, and reducer files created wit
 The setup for react-native debugger is in App.js, please edit them to your own needs
 
 <h3>Installation steps</h3>
-    Make a folder and go to that folder and type. Make sure you have expo cli installed
+    Make sure you have expo cli installed. Make a folder and go to that folder and type one step at a time. 
     </br>
 <ol>
   <li><h4>git clone https://github.com/mdx919/Expo-React-Native-Redux-Thunk-TabNav.git</h4></li>
