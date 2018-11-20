@@ -4,6 +4,20 @@ This template has Tab Navigation, Redux, React-Redux, Redux-Thunk, eslint-rallyc
 For Redux, the storeConfiguration, action creator, and reducer files created with counter example.
 The setup for react-native debugger is in App.js, please edit them to your own needs
 
+<p>Whats included?</p>
+<ul>
+  <li>Tab Navigation</li>
+  <li>>Redux</li>
+  <li>React-Redux</li>
+  <li>Redux-Thunk</li>
+  <li>eslint-rallycoding</li>
+  <li>storeConfiguration</li>
+  <li>Action files with example</li>
+  <li>Reducer files created with counter example</li>
+  <li>React-Native debugger setup</li>
+</ul>
+and more....
+
 <h3>Installation steps</h3>
     Make sure you have expo cli installed. Make a folder and go to that folder and type one step at a time. 
     </br>
